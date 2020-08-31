@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Git/Baekjoon_srctre/Cpp/2739.cpp
+stdio.h
+C:/Git/Baekjoon_srctre/Cpp/stdio.h
+

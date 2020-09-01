@@ -76,27 +76,27 @@ include CMakeFiles/Cpp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Cpp.dir/flags.make
 
-CMakeFiles/Cpp.dir/2439.cpp.obj: CMakeFiles/Cpp.dir/flags.make
-CMakeFiles/Cpp.dir/2439.cpp.obj: ../2439.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Git\Baekjoon_srctre\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Cpp.dir/2439.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Cpp.dir\2439.cpp.obj -c C:\Git\Baekjoon_srctre\Cpp\2439.cpp
+CMakeFiles/Cpp.dir/1924.cpp.obj: CMakeFiles/Cpp.dir/flags.make
+CMakeFiles/Cpp.dir/1924.cpp.obj: ../1924.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Git\Baekjoon_srctre\Cpp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Cpp.dir/1924.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Cpp.dir\1924.cpp.obj -c C:\Git\Baekjoon_srctre\Cpp\1924.cpp
 
-CMakeFiles/Cpp.dir/2439.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Cpp.dir/2439.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Git\Baekjoon_srctre\Cpp\2439.cpp > CMakeFiles\Cpp.dir\2439.cpp.i
+CMakeFiles/Cpp.dir/1924.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Cpp.dir/1924.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Git\Baekjoon_srctre\Cpp\1924.cpp > CMakeFiles\Cpp.dir\1924.cpp.i
 
-CMakeFiles/Cpp.dir/2439.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Cpp.dir/2439.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Git\Baekjoon_srctre\Cpp\2439.cpp -o CMakeFiles\Cpp.dir\2439.cpp.s
+CMakeFiles/Cpp.dir/1924.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Cpp.dir/1924.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Git\Baekjoon_srctre\Cpp\1924.cpp -o CMakeFiles\Cpp.dir\1924.cpp.s
 
 # Object files for target Cpp
 Cpp_OBJECTS = \
-"CMakeFiles/Cpp.dir/2439.cpp.obj"
+"CMakeFiles/Cpp.dir/1924.cpp.obj"
 
 # External object files for target Cpp
 Cpp_EXTERNAL_OBJECTS =
 
-Cpp.exe: CMakeFiles/Cpp.dir/2439.cpp.obj
+Cpp.exe: CMakeFiles/Cpp.dir/1924.cpp.obj
 Cpp.exe: CMakeFiles/Cpp.dir/build.make
 Cpp.exe: CMakeFiles/Cpp.dir/linklibs.rsp
 Cpp.exe: CMakeFiles/Cpp.dir/objects1.rsp

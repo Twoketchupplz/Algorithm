@@ -30,11 +30,12 @@ def BFS(v):
     queue = [v]
     visited_B[v] = 1
     while queue:
-        for linked_v in edge[queue[0]]:
+        popped_node = queue.pop(0)
+        print(popped_node, end=" ")
+        for linked_v in edge[popped_node]:
             if visited_B[linked_v] == 0:
                 queue.append(linked_v)
                 visited_B[linked_v] = 1
-        print(queue.pop(0), end=" ")
 
 
 DFS(V)

@@ -1,5 +1,4 @@
 import sys
-import math
 
 input = sys.stdin.readline
 
@@ -7,37 +6,45 @@ N, L, R = map(int, input().split())
 
 
 def bfs(n, left, right):
-    continent = [list(map(int, input().split())) for _ in range(n)]
-    visited = [list(False for _ in range(n)) for _ in range(n)]
-    x = [0, 1, 1, 1, 0, -1, -1, -1]
-    y = [1, 1, 0, -1, -1, -1, 0, 1]
-    population = 0
-    ans = 0
-    #시작위치
-    queue = [[0, 0]]
-    visited[0, 0] = True
-    while queue: #하나의 연합이 끝날때까지
-        currentPos = queue.pop(0)
-        for i in range(8):
-            next_x = currentPos[0] + x[i]
-            next_y = currentPos[1] + y[i]
-            if 0 > next_x >= n \
-                    and 0 > next_y >= n \
-                    and not visited[next_x][next_y]\
-                    and left <= abs(continent[currentPos[0]][currentPos[1]] - continent[next_x][next_y]) <= right:
-                queue.append([next_x, next_y])
-                visited[next_x][next_y] = True
+    population = [list(map(int, input().split())) for _ in range(n)]
+    union = [list(False for _ in range(n)) for _ in range(n)]
+    x = [0, 1, 0, -1]
+    y = [-1, 0, 1, 0]
+    total_move = 0
+    while True:
+        visited = [list(False for _ in range(n)) for _ in range(n)]
+        move = False
+        for col in range(n):
+            for row in range(n):
+                if not visited[row][col]:
+                    queue = [[row, col]]
+                    visited[row][col] = True
+                    union[row][col] = True
+                    union_p = population[row][col]
+                    num_nation = 1
+                    while queue:
+                        current = queue.pop(0)
+                        for i in range(4):
+                            next_row = current[0] + x[i]
+                            next_col = current[1] + y[i]
+                            if 0 <= next_row < n and 0 <= next_col < n and not visited[next_row][next_col] and left <= abs(population[current[0]][current[1]] - population[next_row][next_col]) <= right:
+                                queue.append([next_row, next_col])
+                                visited[next_row][next_col] = True
+                                union[next_row][next_col] = True
+                                union_p += population[next_row][next_col]
+                                num_nation += 1
+                                move = True
+                                print(move)
+                    for m_col in range(n):
+                        for m_row in range(n):
+                            if union[m_row][m_col]:
+                                population[m_row][m_col] = int(union_p / num_nation)
+                                union[m_row][m_col] = False
+        if move:
+            total_move += 1
+        else:
+            break
+    print(total_move)
 
-    cnt = 0
-    for i in visited[i]:
-        for j in visited[i][j]:
-            if j:
-                cnt += 1
-                population += continent[i][j]
 
-    population = math.floor(population / cnt)
-    for i in visited[i]:
-        for j in visited[i][j]:
-            if j:
-                continent[i][j] = population
-    #다음 연합으로 가야해..
+bfs(N, L, R)

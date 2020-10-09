@@ -12,16 +12,14 @@ def quick_sort(prm_list):
 
     pivot = prm_list.pop(0)
 
-    idx = 0
-    for _ in prm_list[:]:
+    for i in prm_list[:]:
 
-        if prm_list[idx] < pivot:
-            lesser.append(prm_list.pop(idx))
-        elif prm_list[idx] > pivot:
-            greater.append(prm_list.pop(idx))
+        if i < pivot:
+            lesser.append(prm_list.pop(0))
+        elif i > pivot:
+            greater.append(prm_list.pop(0))
         else:
-            prm_list.pop(idx)
-        idx += 1
+            prm_list.pop(0)
 
     lesser = quick_sort(lesser)
     greater = quick_sort(greater)

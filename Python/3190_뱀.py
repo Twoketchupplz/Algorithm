@@ -2,7 +2,7 @@ def Dummy():
     N = int(input())
     K = int(input())
 
-    board = [[0]*(N+1) for _ in range(N+1)]
+    board = [[0] * (N + 1) for _ in range(N + 1)]
     board[1][1] = 1
 
     apple = []
@@ -25,7 +25,7 @@ def Dummy():
 def end_time(n, board, route_list):
     ans = 0
     swne = 3  # 시작방향
-    cardinal_points = [[1, 0], [0, -1], [-1, 0], [0, 1]] #Dex++1, Lavo--1 남서북동
+    cardinal_points = [[1, 0], [0, -1], [-1, 0], [0, 1]]  # Dex++1, Lavo--1 남서북동
     head = [1, 1]
     tail = list()
     pre_time = 0

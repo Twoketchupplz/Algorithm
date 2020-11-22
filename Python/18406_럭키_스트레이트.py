@@ -3,10 +3,10 @@
 N = list(map(int, input()))
 
 length = len(N)
-left, right= 0, 0
+left, right = 0, 0
 
 for i in range(length):
-    if i < length/2:
+    if i < length / 2:
         left += N[i]
     else:
         right += N[i]

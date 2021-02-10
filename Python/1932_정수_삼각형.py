@@ -3,6 +3,7 @@
 각 줄마다 첫번째 값과 마지막 값은 다른 선택지가 없으므로 각각 이전줄의 처음, 마지막 값과 합한다.
 """
 
+
 def int_triangle(size, first):
     pre_line = [first]
     for _ in range(size - 1):

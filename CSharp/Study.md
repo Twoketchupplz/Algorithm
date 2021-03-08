@@ -25,4 +25,6 @@ string textFloat = "1.23456";
 float numFloat = float.Parse(textFloat);
 ```
 
+전역변수
+- C#은 C/C++과 달리 가독성과 오류 방지를 위해 전역변수를 지원하지 않도록 설계했다. 하지만 이를 대체하는 필드가 있다.
 

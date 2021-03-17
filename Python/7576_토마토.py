@@ -1,21 +1,31 @@
-def tomato(m, n, warehouse):
-    # 인접확인은 +-1로 확인한다. 여기서 row col이 0보다 작거나 각각 n, m보다 크거나 같으면 아웃라인
-    #
-    # 들어온 모든 리스트의 visited를 False한다.
+def tomato(m, n, boxes):
+    delta = [[0, 1], [0, -1], [-1, 0], [1, 0]]
+    # enqueue initial tomatoes
+    location_queue = []
+    for row in range(n):
+        for col in range(m):
+            if boxes[row][col] > 0:
+                location_queue.append([row, col])
 
-    # 시작지점을 찾는다. visited True
-    # 시작지점을 큐에 넣는다.
-    # while (Q != null):
-    #     u = deque(Q)
-    #     init L(u)
-    #     for each v in L(u):
-    #         if (not visited[v]):
-    #             visited[v] = True
-    #             enqueue(Q, v)
+    while location_queue:
+        # 모든 인접노드에 대한 검사
+        loc = location_queue.pop(0)
+        cnt = boxes[loc[0]][loc[1]]
+        for pnt in delta:
+            i = loc[0] + pnt[0]  # row
+            j = loc[1] + pnt[1]  # col
+            if 0 <= i < n and 0 <= j < m:  # 갈 수 있는 인접 노드인지 확인
+                if boxes[i][j] == 0:  # 그리고 그 박스에 방문하지 않은 토마토가 있으면
+                    boxes[i][j] += cnt + 1  # 방문한다. 이때
+                    location_queue.append([i, j])
 
-    return 0
+    for line in boxes:
+        if 0 in line:
+            return -1
+
+    return cnt - 1  # cnt를 global 변수로 만들어야 하는가
 
 
 M, N = map(int, input().split())
-tomato_warehouse = [list(map(int, input().split())) for _ in range(N)]
-print(tomato(M, N, tomato_warehouse))
+tomato_boxes = [list(map(int, input().split())) for _ in range(N)]
+print(tomato(M, N, tomato_boxes))

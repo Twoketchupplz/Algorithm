@@ -1,7 +1,10 @@
+from collections import deque
+
+
 def tomato(m, n, boxes):
     delta = [[0, 1], [0, -1], [-1, 0], [1, 0]]
     # enqueue initial tomatoes
-    location_queue = []
+    location_queue = deque()
     for row in range(n):
         for col in range(m):
             if boxes[row][col] > 0:
@@ -9,7 +12,7 @@ def tomato(m, n, boxes):
 
     while location_queue:
         # 모든 인접노드에 대한 검사
-        loc = location_queue.pop(0)
+        loc = location_queue.popleft()
         cnt = boxes[loc[0]][loc[1]]
         for pnt in delta:
             i = loc[0] + pnt[0]  # row

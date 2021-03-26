@@ -30,5 +30,5 @@ def tomato(m, n, boxes):
 
 
 M, N = map(int, input().split())
-tomato_boxes = [list(map(int, input().split())) for _ in range(N)]
+tomato_boxes = [list(map(str, input().split())) for _ in range(N)]
 print(tomato(M, N, tomato_boxes))

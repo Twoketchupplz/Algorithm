@@ -1,0 +1,2 @@
+C:\Git\Algorithm\CSharp\obj\x86\Debug\CSharp_Algorithm.csprojAssemblyReference.cache
+C:\Git\Algorithm\CSharp\obj\x86\Debug\CSharp_Algorithm.csproj.CoreCompileInputs.cache

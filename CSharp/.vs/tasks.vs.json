@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-2438",
+      "appliesTo": "Baekjoon/2438.cs",
+      "type": "launch"
+    }
+  ]
+}

@@ -1,9 +1,16 @@
 # Baekjoon 풀이
 
+## 2021년 4월 01일
+### 문자열
+1. [1541 잃어버린 괄호](CSharp/Baekjoon/1541.cs)
+   - [제출결과](https://www.acmicpc.net/source/27917121)
+2. [1120 문자열](CSharp/Baekjoon/1120.cs)
+   - [제출결과](https://www.acmicpc.net/source/27920614)
+
 ## 2021 3월 25일
 ###
 1. [14888 연산자 끼워넣기](Python/14888_연산자_끼워넣기.py)
-    - [소스코드](https://www.acmicpc.net/source/27664226)
+    - [제출결과](https://www.acmicpc.net/source/27664226)
    
 2. [1987 알파벳](Python/1987_알파벳.py)
 

@@ -14,7 +14,7 @@ public class MainApp
         ArrayList expression = new ArrayList();
         ArrayList operand = new ArrayList();
         string strInteger = "";
-        int ctoi;
+        int stoi;
         int ans = 0;
         bool minus = false;
 
@@ -35,13 +35,13 @@ public class MainApp
                 continue;
             }
 
-            ctoi = Convert.ToInt32(strInteger);
-            expression.Add(ctoi);
+            stoi = Convert.ToInt32(strInteger);
+            expression.Add(stoi);
             strInteger = "";
         }
 
-        ctoi = Convert.ToInt32(strInteger);
-        expression.Add(ctoi);
+        stoi = Convert.ToInt32(strInteger);
+        expression.Add(stoi);
 
         for (int i = 0; i < expression.Count; i++)
         {

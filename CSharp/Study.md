@@ -1,15 +1,37 @@
 ﻿# C# Programming
+## chapter 02 : 프로그램의 골자
+### 네임스페이스
+namespace는 성격이나 하는 일이 비슷한 클래스, 구조체, 인터페이스, 델리게이트, 열거 형식 등을 하나의 이름 아래 묶는다. 네임스페이스를 사용하는 방법은 두가지 이다. 하나는 클래스명 앞에 네임스페이스를 모두 적는 것이다. 다른 하나는 프로그램 맨 위에 `using`을 사용하여 cs파일에서 사용하고자 하는 네임스페이스를 한번 설정해 주고 이후 해당 파일 내에서 네임스페이스 없이 직접 클래스를 사용하는 방법이다.
+```c#
+// 첫번째 방법
+static void Main(string[] args)
+{
+    System.Console.WriteLine();
+}
+
+// 두번째 방법
+using System;
+
+static void Main(string[] args)
+{
+    Console.WriteLine();
+}
+```
+
+### 클래스
+`class`는 데이터와 데이터를 처리하는 기능인 메소드로 이루어져 있다. 기본적이지만 클래스의 제 역할이 뭔지 잊지 말자.
+
 ## chapter 03: 타입 변환
  - 값 형식의 변수는 스택에 저장된다. 코드 블록 안에서 생성된 모든 값 형식의 변수들은 블록이 끝나면 메모리에서 제거된다.
  - 참조 형식의 변수는 힙에 데이터를 저장하고 스택에는 그 데이터가 저장된 힙 메모리 주소를 저장한다. 그러므로 데이터 자체는 생명을 유지한다.
 
-### 문자열을 숫자로 변환할 때
+### 숫자를 문자열로 변환할 때
 ```c#
 int number = 123;
 string text = number.ToString();
 ```
 
-### 숫자를 문자열로  변환할 때
+### 문자열을 숫자로  변환할 때
 Convert  
 - `Boolean` `Char` `SByte` `Byte` `Int16` `Int32` `Int64` `UInt16` `UInt32` `UInt64` `Single` `Double` `Decimal` `DateTime` 및 `String` 타입으로 변환을 지원한다.
   

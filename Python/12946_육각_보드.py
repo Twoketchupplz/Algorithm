@@ -8,30 +8,51 @@ hex tile 의 경우 최대 3개의 색만 필요하다.
 ans = 0
 
 
-def get_neighbor(cur_node):
+# 'X' == 0, '-' == 1, 중심노드가 되었던 'X' = 2 를 하면 어느정도의 중복검사를 막을 수 있다.
+def get_board(n, naive_board):
+    new_board = []
+    for i in range(n):
+        new_board.append([])
+        for j in range(n):
+            if naive_board[i][j] == '-':
+                new_board[i].append(1)
+            else:
+                new_board[i].append(0)
+
+    return new_board
+
+
+# (x-1, y), (x-1, y+1),
+# (x, y+1),  (x, y-1),
+# (x+1, y), (x+1, y-1)
+def get_neighbor(cur_node, board):
     global ans, N, Board
     cnt = 1
     ans = max(1, ans)
+    # print("-----", cur_node, "-----")
     dx = [-1, -1, 0, +1, +1, 0]
     dy = [0, +1, +1, 0, -1, -1]
     for idx in range(-1, 6):  # 중복검사
         x = cur_node[0] + dx[idx]
         y = cur_node[1] + dy[idx]
-        if 0 <= x < N and 0 <= y < N and Board[x][y] == 'X':
-            # print("카운트된 노드(", x, ",", y, ")")
+        if 0 <= x < N and 0 <= y < N and board[x][y] == 0:
+            print("카운트된 노드(", x, ",", y, ")")
             cnt += 1
-            # print("cnt:", cnt)
+            print("cnt:", cnt)
             ans = max(cnt, ans)
-            # print("ans:", ans)
+            print("ans:", ans)
             if ans == 3:
                 return
         else:
+            print("무시된 노드(", x, ",", y, ")")
+            print()
             cnt = 1
     return
 
 
 def color_tile():
     global ans, N, Board
+    board = get_board(N, Board)
     node_list = []
     for i in range(N):
         for j in range(N):
@@ -39,8 +60,12 @@ def color_tile():
                 node_list.append((i, j))
 
     for v in node_list:
-        if ans != 3:
-            get_neighbor(v)
+        if ans < 3:
+            get_neighbor(v, board)
+            board[v[0]][v[1]] = 2
+            print(board)
+        else:
+            return ans
 
     return ans
 

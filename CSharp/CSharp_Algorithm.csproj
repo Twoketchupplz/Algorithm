@@ -66,21 +66,10 @@
     <Content Include=".idea\.idea.CSharp\.idea\vcs.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Baekjoon\10718.cs" />
-    <Compile Include="Baekjoon\10869.cs" />
-    <Compile Include="Baekjoon\14681.cs" />
-    <Compile Include="Baekjoon\2438.cs" />
-    <Compile Include="Practice\BoxingUnboxing.cs" />
-    <Compile Include="Practice\Char.cs" />
-    <Compile Include="Practice\Enum3.cs" />
-    <Compile Include="Practice\EnumType.cs" />
-    <Compile Include="Practice\FloatConversion.cs" />
-    <Compile Include="Practice\FloatingPoint.cs" />
-    <Compile Include="Practice\Nullable.cs" />
-    <Compile Include="Practice\Object.cs" />
-    <Compile Include="Practice\Overflow.cs" />
-    <Compile Include="Practice\Practice.cs" />
-    <Compile Include="Practice\StringNumberConversion.cs" />
+    <Compile Include="Baekjoon\1541.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Practice" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>

@@ -13,7 +13,7 @@ s가 되는 구간 찾기 : O(n)
 
 dict{number: cnt}
 num1 + num2 == s
-  cntOfNum1 * cntOfNum2
+  cntOfNum1! * cntOfNum2!
 """
 
 

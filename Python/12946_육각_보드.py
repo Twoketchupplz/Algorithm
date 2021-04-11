@@ -3,21 +3,22 @@ https://www.acmicpc.net/problem/12946
 offset coordinates 로 표현된 육각 타일에 색이 이웃하지 않게 칠할 때 칠해지는 색의 개수
 4색정리: 평면을 유한 개의 부분으로 나누어 각 부분에 색을 칠할 때, 서로 맞닿은 부분을 다른 색으로 칠한다면 네 가지 색으로 충분하다
 hex tile 의 경우 최대 3개의 색만 필요하다.
+
+주의 타일이 삼각형 혹은 역
 """
 
 ans = 0
 
 
-# 'X' == 0, '-' == 1, 중심노드가 되었던 'X' = 2 를 하면 어느정도의 중복검사를 막을 수 있다.
 def get_board(n, naive_board):
     new_board = []
     for i in range(n):
         new_board.append([])
         for j in range(n):
             if naive_board[i][j] == '-':
-                new_board[i].append(1)
-            else:
                 new_board[i].append(0)
+            else:
+                new_board[i].append(1)
 
     return new_board
 

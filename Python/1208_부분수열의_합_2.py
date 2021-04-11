@@ -14,11 +14,15 @@ s가 되는 구간 찾기 : O(n)
 dict{number: cnt}
 num1 + num2 == s
   cntOfNum1! * cntOfNum2!
+
+combinations 함수를 사용하자
 """
+from collections import deque
 
 
 def subsequence(size, s, sequence):
     cnt = 0
+    dq = deque()
 
     for idx in range(len(sequence) - size + 1):
         _sum = 0

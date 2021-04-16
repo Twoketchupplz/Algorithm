@@ -4,7 +4,7 @@
 ### 트리
 1.
 2. [4256 트리](Python/4256_트리.py)
-   - [제출결과](https://www.acmicpc.net/source/28421895)
+   - [제출결과](https://www.acmicpc.net/source/share/03c91e2d05c542a1bc0049a7f9762eb3)
 
 ## 2021년 4월 08일
 ### 이분탐색, 투 포인터, 중간에서 만나기, dfs, 그래프

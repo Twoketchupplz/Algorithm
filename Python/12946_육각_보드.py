@@ -12,73 +12,36 @@ DFS
 """
 
 
-# 보드를 색칠한다 '-' = -1, 'X' = 0, 색상은 1, 2, 3
-def get_board(n, naive_board):
-    new_board = []
-    for i in range(n):
-        new_board.append([])
-        for j in range(n):
-            if naive_board[i][j] == '-':
-                new_board[i].append(-1)
-            else:
-                new_board[i].append(0)
-
-    return new_board
-
-
-# (x-1, y), (x-1, y+1),
-# (x, y+1),  (x, y-1),
-# (x+1, y), (x+1, y-1)
-def get_neighbor(cur_node_x, cur_node_y, board):
-    global N, Board
-    color = {1: False, 2: False}
-    # print("-----", cur_node, "-----")
+def dfs(x, y, color):
+    global N, board, ans
     dx = [-1, -1, 0, +1, +1, 0]
     dy = [0, +1, +1, 0, -1, -1]
-    for idx in range(-1, 6):  # 중복검사
-        x = cur_node_x + dx[idx]
-        y = cur_node_y + dy[idx]
-        if 0 <= x < N and 0 <= y < N and board[x][y] > 0:
-            if board[x][y] == 1:
-                color[1] = True
-            elif board[x][y] == 2:
-                color[2] = True
-
-    # print(color[1], color[2])
-    if color[1] and color[2]:
-        return 3
-    elif color[1]:
-        board[cur_node_x][cur_node_y] = 2
-        return 2
-    elif color[2]:
-        board[cur_node_x][cur_node_y] = 1
-        return 2
-    else:
-        board[cur_node_x][cur_node_y] = 1
-        return 1
+    board[x][y] = color
+    ans = max(ans, 1)
+    for idx in range(6):
+        adj_x, adj_y = x + dx[idx], y + dy[idx]
+        if not (0 <= adj_x < N and 0 <= adj_y < N):
+            continue
+        if board[adj_x][adj_y] == '-':
+            continue
+        if board[adj_x][adj_y] == 'X':
+            dfs(adj_x, adj_y, 1 - color)
+        ans = max(ans, 2)
+        if board[adj_x][adj_y] == color:
+            ans = max(ans, 3)
 
 
 def color_tile():
-    global N, Board
-    ans = 0
-    board = get_board(N, Board)
-    node_list = []
+    global N, board
     for i in range(N):
         for j in range(N):
-            if Board[i][j] == 'X':
-                node_list.append((i, j))
-
-    # 모든 타일이 '-'인 경우 아래 반복문은 수행하지 않고 ans = 0이다.
-    for v in node_list:
-        if ans < 3:
-            ans = max(ans, get_neighbor(v[0], v[1], board))
-            # print(board)
-        else:
-            return ans
-
+            if board[i][j] == 'X':
+                dfs(i, j, 0)
     return ans
 
 
+global board, ans
+ans = 0
 N = int(input())
-Board = [list(input()) for _ in range(N)]
+board = [list(input()) for _ in range(N)]
 print(color_tile())

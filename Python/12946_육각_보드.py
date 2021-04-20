@@ -11,19 +11,22 @@ DFS
 각 타일마다 주변만 체크한다고 되는 일이 아니다.
 """
 
+import sys
+
+sys.setrecursionlimit(100000)
+
 
 def dfs(x, y, color):
     global N, board, ans
     dx = [-1, -1, 0, +1, +1, 0]
     dy = [0, +1, +1, 0, -1, -1]
+
     board[x][y] = color
     ans = max(ans, 1)
     for idx in range(6):
         adj_x, adj_y = x + dx[idx], y + dy[idx]
-        if not (0 <= adj_x < N and 0 <= adj_y < N):
-            continue
-        if board[adj_x][adj_y] == '-':
-            continue
+        if not (0 <= adj_x < N and 0 <= adj_y < N): continue
+        if board[adj_x][adj_y] == '-': continue
         if board[adj_x][adj_y] == 'X':
             dfs(adj_x, adj_y, 1 - color)
         ans = max(ans, 2)

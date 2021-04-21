@@ -53,7 +53,8 @@ def search_cycle():
     # 남은 에지가 0이 아닌 노드가 사이클에 포함되는 노드이다.
     # print(e_cnt)
     ans = [0 for _ in range(N + 1)]
-    for v_idx, val in enumerate(linked_edge_ctr):
+    for v_idx in range(N+1):
+        val = linked_edge_ctr[v_idx]
         if val == 0:
             ans[v_idx] = -1
         else:
@@ -65,8 +66,10 @@ def search_cycle():
 def BFS(cycle_nodes):
     ans = cycle_nodes
     # 노드마다 하나씩 순회한다.
-    for start, is_cycle in enumerate(cycle_nodes):
+
+    for start in range(N+1):
         # 사이클이면 시작하지 않는다. 0이 사이클임을 의미
+        is_cycle = cycle_nodes[start]
         if start == 0 or is_cycle == 0:
             continue
         # 노드가 지선이면 탐색을 시작한다 사이클을 만날때까지

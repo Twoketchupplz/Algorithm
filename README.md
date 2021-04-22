@@ -3,6 +3,7 @@
 ## 2021 4월 22일
 ###
 1. [16947 서울 지하철 2호선](Python/16947_서울_지하철_2호선.py)
+    - [제출결과](https://www.acmicpc.net/source/share/a9d79c6da7b44be3a4cd4d5031f9e094)
 
 ## 2021년 4월 16일
 ### 트리

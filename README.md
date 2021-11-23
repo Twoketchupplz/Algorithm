@@ -1,15 +1,19 @@
 # Baekjoon 풀이
 
+## 2021 11월 23일
+### 정렬
+1. [2750 수 정렬하기](Python/2750_수_정렬하기.py)
+   - [제출결과](http://boj.kr/92352e9e77de40b6b9c2798c94868546)
 ## 2021 4월 22일
 ###
 1. [16947 서울 지하철 2호선](Python/16947_서울_지하철_2호선.py)
-    - [제출결과](https://www.acmicpc.net/source/share/a9d79c6da7b44be3a4cd4d5031f9e094)
+    - [제출결과](http://boj.kr/a9d79c6da7b44be3a4cd4d5031f9e094)
 
 ## 2021년 4월 16일
 ### 트리
 1.
 2. [4256 트리](Python/4256_트리.py)
-   - [제출결과](https://www.acmicpc.net/source/share/03c91e2d05c542a1bc0049a7f9762eb3)
+   - [제출결과](http://boj.kr/03c91e2d05c542a1bc0049a7f9762eb3)
 
 ## 2021년 4월 08일
 ### 이분탐색, 투 포인터, 중간에서 만나기, dfs, 그래프
@@ -21,14 +25,14 @@
 ## 2021년 4월 01일
 ### 문자열
 1. [1541 잃어버린 괄호](CSharp/Baekjoon/1541.cs)
-   - [제출결과](https://www.acmicpc.net/source/27917121)
+   - [제출결과](http://boj.kr/e66b228247f1467ea9644d8d23df17c2)
 2. [1120 문자열](CSharp/Baekjoon/1120.cs)
-   - [제출결과](https://www.acmicpc.net/source/27920614)
+   - [제출결과](http://boj.kr/bfcc9fc0fae9432895ec42c8537f954d)
 
 ## 2021 3월 25일
 ###
 1. [14888 연산자 끼워넣기](Python/14888_연산자_끼워넣기.py)
-    - [제출결과](https://www.acmicpc.net/source/27664226)
+    - [제출결과](http://boj.kr/196a3ac93d59454dad12607a7da2d24d)
    
 2. [1987 알파벳](Python/1987_알파벳.py)
 

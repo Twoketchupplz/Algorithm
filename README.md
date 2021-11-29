@@ -1,5 +1,10 @@
 # Baekjoon 풀이
 
+## 2021년 11월 29일
+### 브루트 포스
+- [2798 블랙잭](Python/2798_블랙잭.py)
+   - [제출결과](https://www.acmicpc.net/source/share/6c5e543e687a42e2b918d2f87f9b436b)
+
 ## 2021년 11월 27일
 ### 힙정렬
 - [11399 ATM](Python/11399_ATM.py)

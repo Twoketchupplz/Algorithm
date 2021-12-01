@@ -39,7 +39,7 @@
 
 
 
-## [데이터 타입 구분](Study/Numeric_Types.md)
+## [데이터 타입 구분](Study/DataType.md)
 구분 1
 1. 기본 데이터 타입 (Primitive Type)
     - 값 타입

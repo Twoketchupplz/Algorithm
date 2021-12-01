@@ -39,15 +39,15 @@
 
 
 
-## 데이터 타입 구분
+## [데이터 타입 구분](Study/Numeric_Types.md)
 구분 1
 1. 기본 데이터 타입 (Primitive Type)
     - 값 타입
-        - [숫자 데이터 타입](Study/Numeric_Types.md)
-        - [논리 타입]()
+        - 숫자 데이터 타입
+        - 논리 타입
     - 참조 타입
-        - [문자열 타입]()
-        - [오브젝트 타입]()
+        - 문자열 타입
+        - 오브젝트 타입
 2. 상수(Constants)
 3. 열거형(Enumerator)
 4. 복합 데이터 타입(Complex Data Type)

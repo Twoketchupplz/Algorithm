@@ -67,10 +67,14 @@ decimal   |정수와 소수를 표현하는 비트 수를 미리 정함<br>28~29
 
 
 
+
+
 ## 2. 논리 형식
 - `bool`
 - `true`, `false`
 - 1byte
+
+
 
 
 
@@ -155,6 +159,11 @@ const 자료형 식별자 = 값;
 const int   count = 3;
 ```
 
+
+
+
+
+
 # 열거 형식
 - 키워드: `enum`
 - 같은 범주에 속하는 여러 개의 상수를 선언할 때
@@ -168,6 +177,9 @@ enum DialogResult {YES, NO, CANCEL, CONFIRM, OK}
 // int 로 형변환해야 숫자가 출력됨
 Console.WriteLine((int)DialogResult.OK);
 // 결과 5
+
+enum DialogResult {YES = 10, NO, CANCEL, CONFIRM = 50, OK}
+// 차례로 10, 11, 12, 50, 51
 ```
 
 
@@ -176,8 +188,18 @@ Console.WriteLine((int)DialogResult.OK);
 
 
 # Nullable 형식
+- 어떤 값도 가지지 않는 변수
+- 값 형식만 가능
+```c#
+// 데이터형식? 변수이름;
+int? nullValue = null;
+```
 
-
+- 프로퍼티
+    - .HaxValue
+        - 해당 변수가 값을 가지고 있는가
+    - .Value
+        - 변수에 담긴 값
 
 
 
@@ -206,3 +228,13 @@ Cat kitty = new Cat();
 // `new`연산자와 생성자를 이용해 힙에 객체를 생성
 // `kitty`가 힙에 생성된 객체를 가리킴
 ```
+
+
+
+
+
+# Var
+- 컴파일러가 자동으로 변수의 형식을 지정하는 키워드
+    - CLR이 코드 실행시 var임을 알지 못함
+- 반드시 선언과 동시에 초기화
+- 지역 변수로만 사용 가능(필드에 선언 불가)

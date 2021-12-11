@@ -187,24 +187,6 @@ enum DialogResult {YES = 10, NO, CANCEL, CONFIRM = 50, OK}
 
 
 
-# Nullable 형식
-- 어떤 값도 가지지 않는 변수
-- 값 형식만 가능
-```c#
-// 데이터형식? 변수이름;
-int? nullValue = null;
-```
-
-- 프로퍼티
-    - .HaxValue
-        - 해당 변수가 값을 가지고 있는가
-    - .Value
-        - 변수에 담긴 값
-
-
-
-
-
 # 복합 데이터 형식
 ## 클래스
 - 데이터와 데이터를 처리하는 메소드로 이루어짐
@@ -228,6 +210,24 @@ Cat kitty = new Cat();
 // `new`연산자와 생성자를 이용해 힙에 객체를 생성
 // `kitty`가 힙에 생성된 객체를 가리킴
 ```
+
+
+
+
+
+# Nullable 형식
+- 어떤 값도 가지지 않는 변수
+- 값 형식만 가능
+```c#
+// 데이터형식? 변수이름;
+int? nullValue = null;
+```
+
+- 프로퍼티
+    - .HaxValue
+        - 해당 변수가 값을 가지고 있는가
+    - .Value
+        - 변수에 담긴 값
 
 
 

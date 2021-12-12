@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-10718",
+      "appliesTo": "CS/CS/Baekjoon/10718.cs",
+      "type": "launch"
+    }
+  ]
+}

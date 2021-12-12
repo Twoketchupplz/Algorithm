@@ -1,0 +1,7 @@
+C:\Git\Algorithm\CS\CS\obj\Debug\CS.csproj.AssemblyReference.cache
+C:\Git\Algorithm\CS\CS\obj\Debug\CS.csproj.CoreCompileInputs.cache
+C:\Git\Algorithm\CS\CS\bin\Debug\CS.exe.config
+C:\Git\Algorithm\CS\CS\bin\Debug\CS.exe
+C:\Git\Algorithm\CS\CS\bin\Debug\CS.pdb
+C:\Git\Algorithm\CS\CS\obj\Debug\CS.exe
+C:\Git\Algorithm\CS\CS\obj\Debug\CS.pdb

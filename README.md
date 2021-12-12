@@ -45,9 +45,9 @@
 
 ## 2021년 4월 01일
 ### 문자열
-1. [1541 잃어버린 괄호](CSharp/Baekjoon/1541.cs)
+1. [1541 잃어버린 괄호](CS/CS/Baekjoon/1541.cs)
    - [제출결과](http://boj.kr/e66b228247f1467ea9644d8d23df17c2)
-2. [1120 문자열](CSharp/Baekjoon/1120.cs)
+2. [1120 문자열](CS/CS/Baekjoon/1120.cs)
    - [제출결과](http://boj.kr/bfcc9fc0fae9432895ec42c8537f954d)
 
 ## 2021 3월 25일

@@ -1,6 +1,0 @@
-C:\Git\Baekjoon\CSharp\bin\Debug\CSharp.exe
-C:\Git\Baekjoon\CSharp\bin\Debug\CSharp.pdb
-C:\Git\Baekjoon\CSharp\obj\Debug\CSharp.csprojAssemblyReference.cache
-C:\Git\Baekjoon\CSharp\obj\Debug\CSharp.csproj.CoreCompileInputs.cache
-C:\Git\Baekjoon\CSharp\obj\Debug\CSharp.exe
-C:\Git\Baekjoon\CSharp\obj\Debug\CSharp.pdb

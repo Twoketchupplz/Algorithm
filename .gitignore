@@ -2,7 +2,7 @@
 /cmake-build-debug/
 CMakeLists.txt
 /.idea/
-CSharp/obj/Debug/CSharp.pdb
-CSharp/obj/Debug/CSharp.exe
-CSharp/bin/Debug/CSharp.pdb
-CSharp/bin/Debug/CSharp.exe
+CS/CS/obj/Debug/CSharp.pdb
+CS/CS/obj/Debug/CSharp.exe
+CS/CS/bin/Debug/CSharp.pdb
+CS/CS/bin/Debug/CSharp.exe

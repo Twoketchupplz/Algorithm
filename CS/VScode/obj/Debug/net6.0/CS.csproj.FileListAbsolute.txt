@@ -1,0 +1,15 @@
+C:\Git\Algorithm\CS\vscode\bin\Debug\net6.0\CS.exe
+C:\Git\Algorithm\CS\vscode\bin\Debug\net6.0\CS.deps.json
+C:\Git\Algorithm\CS\vscode\bin\Debug\net6.0\CS.runtimeconfig.json
+C:\Git\Algorithm\CS\vscode\bin\Debug\net6.0\CS.dll
+C:\Git\Algorithm\CS\vscode\bin\Debug\net6.0\ref\CS.dll
+C:\Git\Algorithm\CS\vscode\bin\Debug\net6.0\CS.pdb
+C:\Git\Algorithm\CS\vscode\obj\Debug\net6.0\CS.csproj.AssemblyReference.cache
+C:\Git\Algorithm\CS\vscode\obj\Debug\net6.0\CS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\Algorithm\CS\vscode\obj\Debug\net6.0\CS.AssemblyInfoInputs.cache
+C:\Git\Algorithm\CS\vscode\obj\Debug\net6.0\CS.AssemblyInfo.cs
+C:\Git\Algorithm\CS\vscode\obj\Debug\net6.0\CS.csproj.CoreCompileInputs.cache
+C:\Git\Algorithm\CS\vscode\obj\Debug\net6.0\CS.dll
+C:\Git\Algorithm\CS\vscode\obj\Debug\net6.0\ref\CS.dll
+C:\Git\Algorithm\CS\vscode\obj\Debug\net6.0\CS.pdb
+C:\Git\Algorithm\CS\vscode\obj\Debug\net6.0\CS.genruntimeconfig.cache

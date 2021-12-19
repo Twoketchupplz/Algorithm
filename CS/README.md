@@ -105,6 +105,7 @@
 
 3. `for`
 4. `foreach`
+    - 컬렉션의 FIFO 등의 규칙을 유지하며 순회
     <details>
     <summary>code</summary>
 

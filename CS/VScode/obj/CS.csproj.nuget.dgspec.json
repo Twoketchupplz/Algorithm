@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\Algorithm\\CS\\vscode\\CS.csproj": {}
+    "C:\\Git\\Algorithm\\cs\\vscode\\CS.csproj": {}
   },
   "projects": {
-    "C:\\Git\\Algorithm\\CS\\vscode\\CS.csproj": {
+    "C:\\Git\\Algorithm\\cs\\vscode\\CS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\Algorithm\\CS\\vscode\\CS.csproj",
+        "projectUniqueName": "C:\\Git\\Algorithm\\cs\\vscode\\CS.csproj",
         "projectName": "CS",
-        "projectPath": "C:\\Git\\Algorithm\\CS\\vscode\\CS.csproj",
+        "projectPath": "C:\\Git\\Algorithm\\cs\\vscode\\CS.csproj",
         "packagesPath": "C:\\Users\\28dan\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\Algorithm\\CS\\vscode\\obj\\",
+        "outputPath": "C:\\Git\\Algorithm\\cs\\vscode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\28dan\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -8,7 +8,7 @@
     <EnableDefaultItems>false</EnableDefaultItems>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="code\2739_구구단.cs"/>
+    <Compile Include="code\11654_아스키_코드.cs"/>
   </ItemGroup>
 
 </Project>

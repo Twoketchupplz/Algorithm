@@ -107,7 +107,7 @@ decimal   |정수와 소수를 표현하는 비트 수를 미리 정함<br>28~29
 ### 문자열과 숫자간 변환
 
 - 문자열을 숫자로 변환  
-    - Convert  
+    - `System.Convert`  
         - 지원 형식: `Boolean` `Char` `SByte` `Byte` `Int16` `Int32` `Int64` `UInt16` `UInt32` `UInt64` `Single` `Double` `Decimal` `DateTime` `String`
         
         - 인수 형식이 맞지 않는 경우 `FormatException`을, `null`인 경우 `0`을 반환
@@ -117,6 +117,7 @@ decimal   |정수와 소수를 표현하는 비트 수를 미리 정함<br>28~29
         // 정수 형식
         string textInt = "123";
         int number = Convert.ToInt16(textInt) // (16: short), (32: int), (64: long)
+        // ToByte(), ToChar() 형태 동일
         ```
         
     - Parse

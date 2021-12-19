@@ -144,4 +144,4 @@
 
 # 참고자료
 ## ASCII Code Table
-![ASCII](..\ASCII_Table.png)
+![ASCII](../ASCII_Table.png)

@@ -37,9 +37,9 @@
 
 
 # [데이터 형식 구분](Study/DataTypes.md)
-1. 값 형식(Value Type)
-2. 참조 형식(Reference Type)
-
+1. 메모리 형식에 따른 구분
+    - 값 형식(Value Type)
+    - 참조 형식(Reference Type)
 1. 기본 데이터 형식 (Primitive Type)
     - 숫자 데이터 형식
     - 논리 형식
@@ -132,3 +132,16 @@
     - 명명된 매개 변수
     - 선택적 매개 변수
 2. 메소드 오버로딩
+
+# [클래스](Study/Class.md)
+1. 멤버
+    - 필드
+    - 메소드
+    - 프로퍼티
+    - 이벤트
+
+
+
+# 참고자료
+## ASCII Code Table
+![ASCII](..\ASCII_Table.png)

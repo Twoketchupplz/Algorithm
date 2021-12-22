@@ -21,14 +21,32 @@
 
 # 사용
 ```c#
-struct stName
+struct STName
 {
-    public int MyField1
-    public int MyField2
+    public int X
+    public int Y
+
+    public STName(int X, int Y) // 생성자 선언 매개변수 없이 불가능
+    {
+        this.X = X;
+        this.Y = Y;
+    }
 
     public void MyMethod()
     {
         //...
+    }
+}
+
+class MainApp
+{
+    static void Main(string[] args)
+    {
+        STName st1; // 선언만으로 인스턴스 생성
+        st1.X = 10;
+        st1.Y = 20;
+
+        STName st2 = new STName(1, 2); // 생성자를 이용한 인스턴스 생성
     }
 }
 ```

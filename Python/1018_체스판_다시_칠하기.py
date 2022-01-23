@@ -1,4 +1,5 @@
 """
+https://www.acmicpc.net/problem/1018
 N*M 보드를 만들고 입력대로 칠한다.
 정상패턴으로 변경하고 좌표마다 변경여부를 저장한다.
 8x8로 자를수 있는 방법대로 자르며 변경 횟수를 합한다.
@@ -9,7 +10,7 @@ N*M 보드를 만들고 입력대로 칠한다.
 
 def chess_board(n, m):
     ans = 32
-    board = [[color for color in str(input())] for _ in range(n)]
+    board = [[color for color in input()] for _ in range(n)]
     mark_board = [[0 for _ in range(m)] for _ in range(n)]
 
     # M*N 보드를 우선 정상 패턴으로 칠한다.

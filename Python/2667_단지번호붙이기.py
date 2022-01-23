@@ -26,10 +26,8 @@ N = int(input())
 complexSize = 0
 sizeList = []
 complexCnt = 0
-visited = []
-for row in range(N):
-    line = list(map(int, input()))
-    visited.append(line)
+visited = [[int(house) for house in input()] for _ in range(N)]
+
 
 # 탐색 시작
 for row in range(N):

@@ -13,23 +13,30 @@ N = int(input())
 # 입력: 수열 A를 이루고 있는 A(i)
 A = list(map(int, input().split()))
 lis = []
+record = []
 
 for i in A:
     if not lis or i > lis[-1]:
         lis.append(i)
+        # record.append(len(lis))
 
     else:
-        start, end = 0, len(lis)-1
-        while start <= end:
+        start, end = 0, len(lis) - 1
+        while start < end:
             mid = (start + end) // 2
-            if i < lis[mid]:
-                end = mid-1
-            elif i > lis[mid]:
-                start = mid+1
+            if i > lis[mid]:
+                start = mid + 1
             else:
-                break
-        lis[mid] = i
+                end = mid
+        lis[end] = i  # start, mid, end 어떤게 들어가야 함?
+    #     record.append(end+1)
+    # print(lis)
+
 
 print(len(lis))
-# 출력: 가장 긴 증가하는 부분 수열의 길이
-
+# # 추출한 배열
+# print(lis)
+# print()
+# # 원본배열과 기록, 실제 LIS 는 record 의 역순으로 순회하며 큰 숫자부터 작은 숫자 순으로 찾으면 된다.
+# print(A)
+# print(record)

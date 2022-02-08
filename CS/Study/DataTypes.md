@@ -1,18 +1,18 @@
 # 차례
-1. [메모리 형식에 따른 구분](#1.-메모리-형식에-따른-구분)
+1. [메모리 형식에 따른 구분](#1-메모리-형식에-따른-구분)
     - 값 형식(Value Type)
     - 참조 형식(Reference Type)
 
-2. [기본 데이터 형식(Primitive Types)](#2.-기본-데이터-형식)
+2. [기본 데이터 형식(Primitive Types)](#2-기본-데이터-형식)
     - 숫자 데이터 형식(Numeric Types)
     - 논리 형식
     - 문자열 형식
     - 오브젝트 형식
-3. [상수 형식(Constants)](#3.-상수-형식)
-4. [열거형(Enumerator)](#4.-열거-형식)
-5. [복합 데이터 형식(Complex Data Type)](#5.-복합-데이터-형식)
-6. [Nullable](#6.-Nullable-형식)
-7. [Var](#7.-Var-형식)
+3. [상수 형식(Constants)](#3-상수-형식)
+4. [열거형(Enumerator)](#4-열거-형식)
+5. [복합 데이터 형식(Complex Data Type)](#5-복합-데이터-형식)
+6. [Nullable](#6-Nullable-형식)
+7. [Var](#7-Var-형식)
 
 
 

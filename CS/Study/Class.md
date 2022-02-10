@@ -1,19 +1,19 @@
 # 차례
-1. [멤버](#1-멤버)
+1. [멤버](#1.-멤버)
     - 필드
     - 메소드
     - 프로퍼티
     - 이벤트
-2. [`static` 키워드](#2-static-키워드)
-3. [`this` 키워드](#3-this-키워드)
-4. [복사](#4-복사)
-5. [접근 한정자(Access Modifier)](#5-접근-한정자)
-6. [상속](#6-상속)
-7. [형식 변환](#7-형식-변환)
-8. [오버라이딩](#8-오버라이딩)
-9. [중첩 클래스](#9-중첩-클래스)
-10. [분할 클래스](#10-분할-클래스)
-11. [확장 메소드](#11-확장-메소드)
+2. [`static` 키워드](#2.-static-키워드)
+3. [`this` 키워드](#3.-this-키워드)
+4. [복사](#4.-복사)
+5. [접근 한정자(Access Modifier)](#5.-접근-한정자)
+6. [상속](#6.-상속)
+7. [형식 변환](#7.-형식-변환)
+8. [오버라이딩](#8.-오버라이딩)
+9. [중첩 클래스](#9.-중첩-클래스)
+10. [분할 클래스](#10.-분할-클래스)
+11. [확장 메소드](#11.-확장-메소드)
 
 
 # 1. 멤버
@@ -173,14 +173,26 @@ class ParentClass
     {
         this.Name = name;
     }
+
+    protected virtual void Method(int num)
+    {
+        // blah blah
+    }
 }
 
-class ChildClass
+class ChildClass : ParentClass
 {
     public ChildClass(string name) : base(name) // base 키워드로 전달
     {
         // code, code and code..
     }
+
+    override void Method(int num)
+    {
+        base.Method // 자동으로 입력됨
+        // overriding..
+    }
+
 }
 ```
 
@@ -215,7 +227,7 @@ Child child = (Child)parent; // 형 변환
 ```c#
 class OtherClass 
 {
-    public void SomeMethod(Parent parentParam) // 자식 클래스를 인자로
+    public void SomeMethod(Parent childInstance) // 부모 타입을 인자로
     {
         /*...*/
     }
@@ -252,6 +264,9 @@ as   | 형식 변환 연산자와 같은 역할<br> 변환에 실패시 예외�
 - 재정의하는 메소드는 `override` 키워드로 한정
 - `private`로 선언한 메소드는 파생 클래스에서 보이지도 않고, 오버라이딩도 불가
 
+### 중요
+- **부모 타입으로 선언한 자식 객체에서 메소드를 부르면 오버라이딩한 (자식의)메소드가 호출됨**
+
 ## 8.3. 메소드 숨기기
 ```c#
 class Derived : Base
@@ -265,7 +280,7 @@ class Derived : Base
 - `new` 한정자 사용 (연산자 `new`와 다른 동명이키)
 - 상속받은 기반 클래스 메소드를 숨기고 파생 클래스에서 새로 구현
 - 오버라이딩과 차이점
-    - 부모 클래스 형식의 객체를 선언하고 메소드를 호출하면 기반 클래스 메소드가 다시 드러남
+    - **부모 클래스 형식의 객체를 선언하고 메소드를 호출하면 기반 클래스 메소드가 다시 드러남**
 
 ## 8.4. 오버라이딩 봉인
 - 해당 메소드 앞에 `sealed` 키워드 사용
